@@ -11,8 +11,8 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
+import logo from '@/images/logos/logo.png'
 
 function MobileNavLink({
   href,
@@ -73,7 +73,7 @@ function MobileNavigation() {
         className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 data-[closed]:scale-95 data-[closed]:opacity-0 data-[enter]:duration-150 data-[leave]:duration-100 data-[enter]:ease-out data-[leave]:ease-in"
       >
         <MobileNavLink href="#features">Features</MobileNavLink>
-        <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
+        <MobileNavLink href="#testimonials">Document</MobileNavLink>
         <MobileNavLink href="#pricing">Pricing</MobileNavLink>
         <hr className="m-2 border-slate-300/40" />
         <MobileNavLink href="/login">Sign in</MobileNavLink>
@@ -88,12 +88,17 @@ export function Header() {
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+          <Link href="/" aria-label="Home">
+              <img
+                src={logo.src}
+                alt="KeepSimple Logo"
+                className="h-14 w-auto"
+              />
             </Link>
+
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
+              <NavLink href="#testimonials">Doucmentation</NavLink>
               <NavLink href="#pricing">Pricing</NavLink>
             </div>
           </div>
