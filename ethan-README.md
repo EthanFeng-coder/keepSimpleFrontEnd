@@ -9,3 +9,7 @@ pricing  里的 software 改成platform
 testmoni 换成documentation 用tailwind 的protocol
 
 done
+
+29/Aug
+https://www.stack-ai.com/
+参考这个网站的滚动logo 在我们的网站实现下需要hover然后改变不同颜色
