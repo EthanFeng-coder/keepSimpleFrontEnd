@@ -43,7 +43,7 @@ export function Hero() {
         Close
       </h1>
       <p className="mx-auto mt-6 max-w-3xl text-lg tracking-tight text-slate-700">
-        We simplify AI integration and complex business challenges, enabling
+        We simplify AI integration and complex workflows, enabling
         businesses to focus on providing a more personalized human touch to
         their customers.
       </p>

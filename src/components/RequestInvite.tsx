@@ -56,7 +56,7 @@ export default function Example() {
               Get in touch
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We simplify AI integration and complex business challenges,
+              We simplify AI integration and complex workflows,
               enabling businesses to focus on providing a more personalized
               human touch to their customers.
             </p>
