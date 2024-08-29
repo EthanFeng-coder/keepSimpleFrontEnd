@@ -7,3 +7,5 @@ header bar 里面需要的是： 点logo就是home, 1- “feature”, 2- “Docu
 talk to us 和 try it for free 合成一个按钮 request invite
 pricing  里的 software 改成platform
 testmoni 换成documentation 用tailwind 的protocol
+
+done
