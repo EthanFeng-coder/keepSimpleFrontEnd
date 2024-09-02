@@ -17,4 +17,5 @@ https://www.stack-ai.com/
 done
 
 1/Sep
-Error contact page from component
+Error contact page 
+Markdown based AI chat page
