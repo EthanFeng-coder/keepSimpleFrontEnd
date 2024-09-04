@@ -1,4 +1,4 @@
-import RequestInvite from '@/components/RequestInvite'
+import RequestInvite from '@/components/ErrorContact'
 
 const RequestInvitePage = () => {
   return (
