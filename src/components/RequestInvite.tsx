@@ -7,12 +7,12 @@ import {
 
 import logo from '@/images/logos/logo.png'
 import rocket from '@/images/request-invite-rocket.png'
-import { Button } from './Button'
 
 export default function Example() {
   return (
     <div className="relative isolate bg-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+        {/* left side */}
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
@@ -111,6 +111,7 @@ export default function Example() {
           </div>
         </div>
 
+        {/* right side */}
         <div className="flex flex-col items-center justify-center px-6 pb-12 sm:pb-24 lg:px-8">
           <img
             src={rocket.src}
@@ -136,7 +137,7 @@ export default function Example() {
               />
               <button
                 type="submit"
-                className="w-80 text-xl rounded-full bg-black px-4 py-4 font-extrabold text-white shadow-sm hover:bg-slate-800"
+                className="w-80 rounded-full bg-black px-4 py-4 text-xl font-extrabold text-white shadow-sm hover:bg-slate-800"
               >
                 Request
               </button>
