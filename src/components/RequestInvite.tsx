@@ -11,10 +11,10 @@ import rocket from '@/images/request-invite-rocket.png'
 export default function Example() {
   return (
     <div className="relative isolate bg-white">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2">
         {/* left side */}
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
-          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+          <div className="mx-auto max-w-xl lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
               <svg
                 aria-hidden="true"
@@ -112,7 +112,7 @@ export default function Example() {
         </div>
 
         {/* right side */}
-        <div className="flex flex-col items-center justify-center px-6 pb-12 sm:pb-24 lg:px-8">
+        <div className="flex min-h-screen flex-col items-center justify-center px-32 sm:pb-48 lg:px-8">
           <img
             src={rocket.src}
             alt="Rocket"
@@ -133,7 +133,7 @@ export default function Example() {
                 type="email"
                 placeholder="Sketchme@ifyou.com"
                 autoComplete="email"
-                className="mb-4 block w-80 rounded-full border-0 px-4 py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="mb-4 block w-80 rounded-full border-0 px-4 py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-400 sm:text-sm sm:leading-6"
               />
               <button
                 type="submit"
