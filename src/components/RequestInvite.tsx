@@ -6,6 +6,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 import logo from '@/images/logos/logo.png'
+import rocket from '@/images/request-invite-rocket.png'
 import { Button } from './Button'
 
 export default function Example() {
@@ -56,9 +57,9 @@ export default function Example() {
               Get in touch
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We simplify AI integration and complex workflows,
-              enabling businesses to focus on providing a more personalized
-              human touch to their customers.
+              We simplify AI integration and complex workflows, enabling
+              businesses to focus on providing a more personalized human touch
+              to their customers.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
@@ -109,106 +110,39 @@ export default function Example() {
             </dl>
           </div>
         </div>
-        <form
-          action="#"
-          method="POST"
-          className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
-        >
-          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <div>
-                <label
-                  htmlFor="first-name"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  First name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    id="first-name"
-                    name="first-name"
-                    type="text"
-                    autoComplete="given-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="last-name"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Last name
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    id="last-name"
-                    name="last-name"
-                    type="text"
-                    autoComplete="family-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Email
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="phone-number"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Phone number
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    id="phone-number"
-                    name="phone-number"
-                    type="tel"
-                    autoComplete="tel"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Message
-                </label>
-                <div className="mt-2.5">
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    defaultValue={''}
-                  />
-                </div>
-              </div>
+
+        <div className="flex flex-col items-center justify-center px-6 pb-12 sm:pb-24 lg:px-8">
+          <img
+            src={rocket.src}
+            alt="Rocket"
+            className="h-auto w-3/5 self-center"
+          />
+          <h2 className="text-center text-3xl font-semibold tracking-tight text-gray-900">
+            Exciting times are ahead!
+          </h2>
+          <h2 className="mt-4 text-center text-lg leading-8 text-gray-600">
+            Enter your email address, we'll send you your unique invite link.
+          </h2>
+
+          <form action="#" method="POST" className="mt-16 w-full">
+            <div className="mx-auto flex max-w-lg flex-col items-center justify-center">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Sketchme@ifyou.com"
+                autoComplete="email"
+                className="mb-4 block w-80 rounded-full border-0 px-4 py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              />
+              <button
+                type="submit"
+                className="w-80 text-xl rounded-full bg-black px-4 py-4 font-extrabold text-white shadow-sm hover:bg-slate-800"
+              >
+                Request
+              </button>
             </div>
-            <div className="mt-8 flex justify-end">
-              <Button type="submit" variant="solid">
-                Send message
-              </Button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   )
