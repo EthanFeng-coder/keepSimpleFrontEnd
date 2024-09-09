@@ -19,7 +19,11 @@ done
 1/Sep
 Error contact page
 
+done
+
 chnange request invite page right hand side into this img
 ![1661724936590_ pic](https://github.com/user-attachments/assets/25d080d6-0373-498c-bae8-aca627e2a74c)
+
+done
 
 Markdown based AI chat page
