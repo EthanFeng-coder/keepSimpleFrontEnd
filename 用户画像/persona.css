@@ -1,0 +1,46 @@
+.app-container {
+    display: flex;
+    flex-direction: row-reverse; /* Reverses the order so sidebar is on the right */
+    align-items: start; /* Aligns items to the top */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.sidebar {
+    width: 20vw; /* Adjust the width of the sidebar */
+    height: 100vh; /* Full height */
+    background-color: #f8f9fa;
+    box-shadow: -1px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Adds scroll to sidebar if items exceed screen height */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px; /* Padding inside the sidebar */
+}
+
+.sidebar li.item {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar li.item.active {
+    background-color: #e9ecef;
+}
+
+.sidebar li.item:hover {
+    background-color: #dee2e6;
+}
+
+.sidebar li.item .icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar li.item span {
+    font-size: 16px;
+}
