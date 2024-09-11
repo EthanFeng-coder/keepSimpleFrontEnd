@@ -1,11 +1,11 @@
 import React from 'react';
-import DoughnutChart from '@/components/DoughnutChart';
+import DynamicChart from '@/components/DynamicBarLineChart'; 
 
 const SomePage: React.FC = () => {
   return (
     <div>
-      <h1>Doughnut Chart</h1>
-      <DoughnutChart />
+      <h1>Dynamic Bar Line Chart</h1>
+      <DynamicChart />
     </div>
   );
 };
