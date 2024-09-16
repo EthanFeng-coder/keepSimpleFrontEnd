@@ -6,7 +6,7 @@ const KnowledgeGraph = () => {
   const chartRef = useRef(null);
   const modalChartRef = useRef(null);
   const [modalVisible, setModalVisible] = useState(false);
-  const [selectedNode, setSelectedNode] = useState(null);
+  const [selectedNode, setSelectedNode] = useState<string | null>(null);
 
   const graphData = {
     nodes: [
