@@ -28,4 +28,7 @@ done
 
 Markdown based AI chat page
 9/Sep
-设计修改用户画像
+设计修改用户画像 done
+
+16/Sep
+force direct graph
